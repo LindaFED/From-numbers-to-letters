@@ -2,80 +2,106 @@
     font-family: 'Roboto', sans-serif;
 }
 
+html {
+    background-color: var(--htmlbackgroung);
+}
+
 :root {
-    --titleColor: rgb(205, 50, 99);/*paleVioletRed*/
-    --textColor:rgb(67, 76, 86);/*slategrey*/
-    --borderColor: rgb(205, 50, 99);/*paleVioletRed*/
-    --backgroundColor: rgb(230, 230, 230);/*silver*/
-    --resultColor: rgb(205, 50, 99);/*paleVioletRed*/
-    --buttonBackgroundColor: rgb(205, 50, 99);/*paleVioletRed*/
-    --buttonBorderColor: rgb(67, 76, 86);/*slategrey*/
-    --buttonTextColor:rgb(230, 230, 230);/*silver*/
-    --cifraFocusColor: rgb(245, 214, 224);/*paleVioletRed*/
+    --titleColor: rgb(205, 50, 99);
+    /*paleVioletRed*/
+    --textColor: rgb(67, 76, 86);
+    /*slategrey*/
+    --borderColor: rgb(205, 50, 99);
+    /*paleVioletRed*/
+    --backgroundColor: rgb(230, 230, 230);
+    /*silver*/
+    --resultColor: rgb(205, 50, 99);
+    /*paleVioletRed*/
+    --buttonBackgroundColor: rgb(205, 50, 99);
+    /*paleVioletRed*/
+    --buttonBorderColor: rgb(67, 76, 86);
+    /*slategrey*/
+    --buttonTextColor: rgb(230, 230, 230);
+    /*silver*/
+    --cifraFocusColor: rgb(245, 214, 224);
+    /*paleVioletRed*/
+    --htmlbackgroung: rgb(250, 235, 240);
+    /*paleVioletRed*/
 }
 
-h1{
+h1 {
     color: var(--titleColor);
-}
-p{
-    color: var(--textColor);
-    
-    font-size:18px;
-    
+    text-decoration: underline;
 }
 
-.foto{
+p {
+    color: var(--textColor);
+    font-size: 18px;
+}
+
+.foto {
     width: 85px;
     height: 85px;
-    margin-right:5px;
-    margin-top:3px;
-    float:right;
+    margin-right: 5px;
+    margin-top: 3px;
+    float: right;
 }
 
-.cifra{
-    padding-top:1px;
+.cifra {
+    padding-top: 1px;
     padding-bottom: 3px;
     border-radius: 5px;
     font-weight: bold;
-    font-size:18px;
-    
+    font-size: 18px;
+    width: 150px;
 }
-.cifra:focus{
+
+.cifra:focus {
     background-color: var(--cifraFocusColor);
 }
 
-.result{
-    color : var(--resultColor);
+.result {
+    color: var(--resultColor);
     font-weight: bold;
-    word-wrap:break-word;
+    word-wrap: break-word;
 }
 
 .button {
     background-color: var(--buttonBackgroundColor);
     border-color: var(--buttonBorderColor);
-    color : var(--buttonTextColor);
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    color: var(--buttonTextColor);
     padding: 2px 20px 2px 20px;
-    margin-left:10px;
+    margin-left: 10px;
     border-radius: 5px;
     font-weight: bold;
-    font-size:18px;
+    font-size: 18px;
+}
+
+.button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 .container {
     background-color: var(--backgroundColor);
     border: 7px solid var(--borderColor);
     border-radius: 18px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    width: 85vw;
-    height: 300px ;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    width: 300px;
+    height: 320px;
     padding-left: 8px;
     margin: auto;
-    
+    margin-top: 15vh;
+}
+
+@media only screen and (min-width: 437px) {
+    .container {
+        width: 85vw;
+    }
 }
 
 @media only screen and (min-width: 600px) {
     .container {
         width: 580px;
+        height: 300px;
     }
 }
